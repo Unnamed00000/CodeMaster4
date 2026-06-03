@@ -111,7 +111,11 @@ button:active {
 }
 
 .topbar strong {
-  font-size: 1rem;
+  color: #fff;
+  font-size: clamp(1.45rem, 3.2vw, 2.35rem);
+  font-weight: 900;
+  line-height: 1;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.34);
 }
 
 .topbar__actions,
@@ -598,7 +602,10 @@ body[data-theme="dark"] .icon-button {
 }
 
 .settings-section--wide p {
+  display: block;
+  padding-top: 2px;
   white-space: pre-line;
+  line-height: 1.9;
 }
 
 .language-grid {

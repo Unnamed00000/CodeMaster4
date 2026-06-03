@@ -51,8 +51,8 @@ const ui = {
     aboutProgramText:
       "Имя приложения: CodeMaster 4\nОписание приложения: CodeMaster 4 учит создавать сайты и приложения, читать основу, писать код, повторять задания, проверять результат и расти до профессиональной разработки.",
     aboutDeveloperTitle: "О разработчике",
-    aboutDeveloperText: "Разработчик приложения: Адам Маргоев, 2026.\nВерсия приложения: 2.0.",
-    footerText: "Разработчик приложения: Адам Маргоев, 2026.\nВерсия приложения: 2.0.",
+    aboutDeveloperText: "Разработчик\nИмя разработчика: Адам Маргоев, 2026\nВерсия приложения: 2.0",
+    footerText: "Разработчик\nИмя разработчика: Адам Маргоев, 2026\nВерсия приложения: 2.0",
   },
   en: {
     brand: "CodeMaster 4",
@@ -98,8 +98,8 @@ const ui = {
     aboutProgramText:
       "Application name: CodeMaster 4\nApplication description: CodeMaster 4 teaches websites and applications: read the basics, write code, repeat tasks, check results and grow into professional development.",
     aboutDeveloperTitle: "About the developer",
-    aboutDeveloperText: "Application developer: Adam Margoev, 2026.\nApplication version: 2.0.",
-    footerText: "Application developer: Adam Margoev, 2026.\nApplication version: 2.0.",
+    aboutDeveloperText: "Developer\nDeveloper name: Adam Margoev, 2026\nApplication version: 2.0",
+    footerText: "Developer\nDeveloper name: Adam Margoev, 2026\nApplication version: 2.0",
   },
   da: {
     brand: "CodeMaster 4",
@@ -145,8 +145,8 @@ const ui = {
     aboutProgramText:
       "Appnavn: CodeMaster 4\nAppbeskrivelse: CodeMaster 4 lærer dig at bygge websites og apps: læse grundlag, skrive kode, gentage opgaver, kontrollere resultater og vokse mod professionel udvikling.",
     aboutDeveloperTitle: "Om udvikleren",
-    aboutDeveloperText: "Appudvikler: Adam Margoev, 2026.\nAppversion: 2.0.",
-    footerText: "Appudvikler: Adam Margoev, 2026.\nAppversion: 2.0.",
+    aboutDeveloperText: "Udvikler\nUdviklernavn: Adam Margoev, 2026\nAppversion: 2.0",
+    footerText: "Udvikler\nUdviklernavn: Adam Margoev, 2026\nAppversion: 2.0",
   },
   ka: {
     brand: "CodeMaster 4",
@@ -192,8 +192,8 @@ const ui = {
     aboutProgramText:
       "აპის სახელი: CodeMaster 4\nაპის აღწერა: CodeMaster 4 გასწავლის საიტებისა და აპების შექმნას: საფუძვლის წაკითხვას, კოდის წერას, დავალებების გამეორებას, შედეგის შემოწმებას და პროფესიულ განვითარებას.",
     aboutDeveloperTitle: "დეველოპერის შესახებ",
-    aboutDeveloperText: "აპის დეველოპერი: ადამ მარგოევი, 2026.\nაპის ვერსია: 2.0.",
-    footerText: "აპის დეველოპერი: ადამ მარგოევი, 2026.\nაპის ვერსია: 2.0.",
+    aboutDeveloperText: "დეველოპერი\nდეველოპერის სახელი: ადამ მარგოევი, 2026\nაპის ვერსია: 2.0",
+    footerText: "დეველოპერი\nდეველოპერის სახელი: ადამ მარგოევი, 2026\nაპის ვერსია: 2.0",
   },
   de: {
     brand: "CodeMaster 4",
@@ -239,8 +239,8 @@ const ui = {
     aboutProgramText:
       "App-Name: CodeMaster 4\nApp-Beschreibung: CodeMaster 4 lehrt Websites und Anwendungen: Grundlagen lesen, Code schreiben, Aufgaben wiederholen, Ergebnisse prüfen und professionell wachsen.",
     aboutDeveloperTitle: "Über den Entwickler",
-    aboutDeveloperText: "App-Entwickler: Adam Margoev, 2026.\nApp-Version: 2.0.",
-    footerText: "App-Entwickler: Adam Margoev, 2026.\nApp-Version: 2.0.",
+    aboutDeveloperText: "Entwickler\nEntwicklername: Adam Margoev, 2026\nApp-Version: 2.0",
+    footerText: "Entwickler\nEntwicklername: Adam Margoev, 2026\nApp-Version: 2.0",
   },
 };
 
