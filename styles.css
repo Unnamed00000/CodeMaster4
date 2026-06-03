@@ -684,6 +684,11 @@ body[data-theme="dark"] .icon-button {
   line-height: 1.9;
 }
 
+.developer-info h3,
+.developer-info p {
+  text-align: center;
+}
+
 .language-grid {
   display: grid;
   grid-template-columns: 1fr;
