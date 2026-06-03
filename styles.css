@@ -496,6 +496,7 @@ body[data-theme="dark"] .icon-button {
   margin: 0 auto 34px;
   color: var(--muted);
   text-align: center;
+  white-space: pre-line;
 }
 
 .modal {
@@ -589,6 +590,15 @@ body[data-theme="dark"] .icon-button {
   margin-bottom: 0;
   color: var(--muted);
   line-height: 1.6;
+}
+
+.settings-section--wide h3,
+.settings-section--wide p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.settings-section--wide p {
+  white-space: pre-line;
 }
 
 .language-grid {

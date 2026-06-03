@@ -8,7 +8,7 @@ const languages = [
 
 const ui = {
   ru: {
-    brand: "Путь Разработчика",
+    brand: "CodeMaster 4",
     heroEyebrow: "HTML, CSS, JavaScript, Java и профессиональная практика",
     heroTitle: "От новичка до профессионального разработчика приложений и сайтов",
     heroText:
@@ -49,13 +49,13 @@ const ui = {
     vibrationSwitchLabel: "Вибрация кнопок",
     aboutProgramTitle: "О программе",
     aboutProgramText:
-      "Приложение учит создавать сайты и приложения: читать основу, писать код, повторять задания, проверять результат и расти до профессиональной разработки.",
+      "Имя приложения: CodeMaster 4\nОписание приложения: CodeMaster 4 учит создавать сайты и приложения, читать основу, писать код, повторять задания, проверять результат и расти до профессиональной разработки.",
     aboutDeveloperTitle: "О разработчике",
-    aboutDeveloperText: "Разработчик: Адам Маргоев, 2026. Версия приложения: 2.0.",
-    footerText: "Разработчик: Адам Маргоев, 2026. Версия приложения: 2.0.",
+    aboutDeveloperText: "Разработчик приложения: Адам Маргоев, 2026.\nВерсия приложения: 2.0.",
+    footerText: "Разработчик приложения: Адам Маргоев, 2026.\nВерсия приложения: 2.0.",
   },
   en: {
-    brand: "Developer Path",
+    brand: "CodeMaster 4",
     heroEyebrow: "HTML, CSS, JavaScript, Java and professional practice",
     heroTitle: "From beginner to professional app and website developer",
     heroText:
@@ -96,13 +96,13 @@ const ui = {
     vibrationSwitchLabel: "Button vibration",
     aboutProgramTitle: "About the program",
     aboutProgramText:
-      "This app teaches websites and applications: read the basics, write code, repeat tasks, check results and grow into professional development.",
+      "Application name: CodeMaster 4\nApplication description: CodeMaster 4 teaches websites and applications: read the basics, write code, repeat tasks, check results and grow into professional development.",
     aboutDeveloperTitle: "About the developer",
-    aboutDeveloperText: "Developer: Adam Margoev, 2026. App version: 2.0.",
-    footerText: "Developer: Adam Margoev, 2026. App version: 2.0.",
+    aboutDeveloperText: "Application developer: Adam Margoev, 2026.\nApplication version: 2.0.",
+    footerText: "Application developer: Adam Margoev, 2026.\nApplication version: 2.0.",
   },
   da: {
-    brand: "Udviklervejen",
+    brand: "CodeMaster 4",
     heroEyebrow: "HTML, CSS, JavaScript, Java og professionel praksis",
     heroTitle: "Fra begynder til professionel udvikler af apps og websites",
     heroText:
@@ -143,13 +143,13 @@ const ui = {
     vibrationSwitchLabel: "Knapvibration",
     aboutProgramTitle: "Om programmet",
     aboutProgramText:
-      "Appen lærer dig at bygge websites og apps: læse grundlag, skrive kode, gentage opgaver, kontrollere resultater og vokse mod professionel udvikling.",
+      "Appnavn: CodeMaster 4\nAppbeskrivelse: CodeMaster 4 lærer dig at bygge websites og apps: læse grundlag, skrive kode, gentage opgaver, kontrollere resultater og vokse mod professionel udvikling.",
     aboutDeveloperTitle: "Om udvikleren",
-    aboutDeveloperText: "Udvikler: Adam Margoev, 2026. Appversion: 2.0.",
-    footerText: "Udvikler: Adam Margoev, 2026. Appversion: 2.0.",
+    aboutDeveloperText: "Appudvikler: Adam Margoev, 2026.\nAppversion: 2.0.",
+    footerText: "Appudvikler: Adam Margoev, 2026.\nAppversion: 2.0.",
   },
   ka: {
-    brand: "დეველოპერის გზა",
+    brand: "CodeMaster 4",
     heroEyebrow: "HTML, CSS, JavaScript, Java და პროფესიული პრაქტიკა",
     heroTitle: "დამწყებიდან პროფესიონალ აპებისა და საიტების დეველოპერამდე",
     heroText:
@@ -190,13 +190,13 @@ const ui = {
     vibrationSwitchLabel: "ღილაკის ვიბრაცია",
     aboutProgramTitle: "პროგრამის შესახებ",
     aboutProgramText:
-      "აპი გასწავლის საიტებისა და აპების შექმნას: საფუძვლის წაკითხვას, კოდის წერას, დავალებების გამეორებას, შედეგის შემოწმებას და პროფესიულ განვითარებას.",
+      "აპის სახელი: CodeMaster 4\nაპის აღწერა: CodeMaster 4 გასწავლის საიტებისა და აპების შექმნას: საფუძვლის წაკითხვას, კოდის წერას, დავალებების გამეორებას, შედეგის შემოწმებას და პროფესიულ განვითარებას.",
     aboutDeveloperTitle: "დეველოპერის შესახებ",
-    aboutDeveloperText: "დეველოპერი: ადამ მარგოევი, 2026. აპის ვერსია: 2.0.",
-    footerText: "დეველოპერი: ადამ მარგოევი, 2026. აპის ვერსია: 2.0.",
+    aboutDeveloperText: "აპის დეველოპერი: ადამ მარგოევი, 2026.\nაპის ვერსია: 2.0.",
+    footerText: "აპის დეველოპერი: ადამ მარგოევი, 2026.\nაპის ვერსია: 2.0.",
   },
   de: {
-    brand: "Entwicklerpfad",
+    brand: "CodeMaster 4",
     heroEyebrow: "HTML, CSS, JavaScript, Java und professionelle Praxis",
     heroTitle: "Vom Anfänger zum professionellen Entwickler für Apps und Websites",
     heroText:
@@ -237,10 +237,10 @@ const ui = {
     vibrationSwitchLabel: "Tastenvibration",
     aboutProgramTitle: "Über das Programm",
     aboutProgramText:
-      "Die App lehrt Websites und Anwendungen: Grundlagen lesen, Code schreiben, Aufgaben wiederholen, Ergebnisse prüfen und professionell wachsen.",
+      "App-Name: CodeMaster 4\nApp-Beschreibung: CodeMaster 4 lehrt Websites und Anwendungen: Grundlagen lesen, Code schreiben, Aufgaben wiederholen, Ergebnisse prüfen und professionell wachsen.",
     aboutDeveloperTitle: "Über den Entwickler",
-    aboutDeveloperText: "Entwickler: Adam Margoev, 2026. App-Version: 2.0.",
-    footerText: "Entwickler: Adam Margoev, 2026. App-Version: 2.0.",
+    aboutDeveloperText: "App-Entwickler: Adam Margoev, 2026.\nApp-Version: 2.0.",
+    footerText: "App-Entwickler: Adam Margoev, 2026.\nApp-Version: 2.0.",
   },
 };
 

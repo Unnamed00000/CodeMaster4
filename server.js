@@ -37,5 +37,5 @@ http
     });
   })
   .listen(port, "127.0.0.1", () => {
-    console.log(`Путь Разработчика: http://127.0.0.1:${port}`);
+    console.log(`CodeMaster 4: http://127.0.0.1:${port}`);
   });
