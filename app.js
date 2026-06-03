@@ -34,6 +34,7 @@ const ui = {
     trackContinueBuild: "Всё равно начать сборку",
     readingTitle: "Прочитай основу",
     codeTitle: "Мини-пример",
+    toolsTitle: "Чем работать",
     understandTitle: "Понять",
     practiceTitle: "Практика",
     qualityTitle: "Критерий",
@@ -101,6 +102,7 @@ const ui = {
     trackContinueBuild: "Start building anyway",
     readingTitle: "Read the basics",
     codeTitle: "Mini example",
+    toolsTitle: "What to use",
     understandTitle: "Understand",
     practiceTitle: "Practice",
     qualityTitle: "Criterion",
@@ -168,6 +170,7 @@ const ui = {
     trackContinueBuild: "Start alligevel",
     readingTitle: "Læs grundlaget",
     codeTitle: "Mini-eksempel",
+    toolsTitle: "Hvad du bruger",
     understandTitle: "Forstå",
     practiceTitle: "Praksis",
     qualityTitle: "Kriterium",
@@ -235,6 +238,7 @@ const ui = {
     trackContinueBuild: "მაინც დაწყება",
     readingTitle: "წაიკითხე საფუძველი",
     codeTitle: "მინი მაგალითი",
+    toolsTitle: "რით იმუშაო",
     understandTitle: "გაგება",
     practiceTitle: "პრაქტიკა",
     qualityTitle: "კრიტერიუმი",
@@ -302,6 +306,7 @@ const ui = {
     trackContinueBuild: "Trotzdem starten",
     readingTitle: "Grundlage lesen",
     codeTitle: "Mini-Beispiel",
+    toolsTitle: "Womit arbeiten",
     understandTitle: "Verstehen",
     practiceTitle: "Praxis",
     qualityTitle: "Kriterium",
@@ -375,6 +380,10 @@ const buildAppSeeds = [
 const lessonTexts = {
   ru: {
     reading: (name) => `${name} - это важная часть пути разработчика. Сначала пойми смысл, затем повтори пример, потом сделай много маленьких заданий. Не пропускай практику: профессиональный навык появляется через десятки повторений.`,
+    tools: () =>
+      "Рекомендуется писать код в Visual Studio Code или другом простом редакторе кода. Проверяй результат в браузере Chrome или Edge, открывай DevTools клавишей F12, держи рядом CodeMaster 4 и сверяй структуру урока: основа, пример, задания, проверка.",
+    buildTools: () =>
+      "Работай как над настоящим проектом: открой CodeMaster 4 как образец, рядом создай свои файлы index.html, styles.css, app.js и server.js. Пиши код в Visual Studio Code, проверяй в браузере, сравнивай свой экран с этим приложением и повторяй шаги до совпадения логики.",
     practice: "Сделай простую версию, проверь её на компьютере, планшете и смартфоне, затем улучши один конкретный элемент.",
     quality: "Ты можешь объяснить код, повторить его без подсказки и найти ошибку, если результат не работает.",
     skills: ["смысл темы", "код руками", "проверка результата", "адаптивность", "чистота кода"],
@@ -404,6 +413,10 @@ const lessonTexts = {
   },
   en: {
     reading: (name) => `${name} is an important part of the developer path. First understand the idea, then repeat the example, then complete many small tasks. Do not skip practice: professional skill appears through repeated work.`,
+    tools: () =>
+      "Use Visual Studio Code or another simple code editor. Check the result in Chrome or Edge, open DevTools with F12, keep CodeMaster 4 nearby and compare the lesson structure: basics, example, tasks and checks.",
+    buildTools: () =>
+      "Work like on a real project: keep CodeMaster 4 open as the reference, then create your own index.html, styles.css, app.js and server.js. Write in Visual Studio Code, test in the browser, compare your screen with this app and repeat until the logic matches.",
     practice: "Build a simple version, test it on desktop, tablet and phone, then improve one specific part.",
     quality: "You can explain the code, repeat it without hints and find a bug when the result fails.",
     skills: ["topic meaning", "hand-written code", "result checking", "responsiveness", "clean code"],
@@ -433,6 +446,10 @@ const lessonTexts = {
   },
   da: {
     reading: (name) => `${name} er en vigtig del af udviklervejen. Forstå først ideen, gentag eksemplet, og lav derefter mange små opgaver. Spring ikke praksis over: professionel kunnen kommer gennem gentagelse.`,
+    tools: () =>
+      "Brug Visual Studio Code eller en anden enkel kodeeditor. Tjek resultatet i Chrome eller Edge, åbn DevTools med F12, hold CodeMaster 4 ved siden af og sammenlign lektionens struktur: grundlag, eksempel, opgaver og kontrol.",
+    buildTools: () =>
+      "Arbejd som på et rigtigt projekt: åbn CodeMaster 4 som reference, og opret dine egne filer index.html, styles.css, app.js og server.js. Skriv i Visual Studio Code, test i browseren, sammenlign din skærm med denne app og gentag til logikken passer.",
     practice: "Byg en enkel version, test den på computer, tablet og telefon, og forbedr derefter én konkret del.",
     quality: "Du kan forklare koden, gentage den uden hjælp og finde en fejl, når resultatet ikke virker.",
     skills: ["emnets mening", "kode i hånden", "kontrol af resultat", "responsivitet", "ren kode"],
@@ -462,6 +479,10 @@ const lessonTexts = {
   },
   ka: {
     reading: (name) => `${name} დეველოპერის გზის მნიშვნელოვანი ნაწილია. ჯერ გაიგე აზრი, შემდეგ გაიმეორე მაგალითი და მერე შეასრულე ბევრი პატარა დავალება. პრაქტიკა არ გამოტოვო: პროფესიული უნარი გამეორებით ჩნდება.`,
+    tools: () =>
+      "გამოიყენე Visual Studio Code ან სხვა მარტივი კოდის რედაქტორი. შედეგი შეამოწმე Chrome-ში ან Edge-ში, DevTools გახსენი F12-ით, გვერდით გქონდეს CodeMaster 4 და შეადარე გაკვეთილის სტრუქტურა: საფუძველი, მაგალითი, დავალებები და შემოწმება.",
+    buildTools: () =>
+      "იმუშავე როგორც ნამდვილ პროექტზე: გახსენი CodeMaster 4 როგორც ნიმუში და გვერდით შექმენი შენი index.html, styles.css, app.js და server.js. წერე Visual Studio Code-ში, შეამოწმე ბრაუზერში, შეადარე შენი ეკრანი ამ აპს და გაიმეორე სანამ ლოგიკა დაემთხვევა.",
     practice: "ააწყე მარტივი ვერსია, შეამოწმე კომპიუტერზე, პლანშეტზე და ტელეფონზე, შემდეგ გააუმჯობესე ერთი ნაწილი.",
     quality: "შეგიძლია კოდის ახსნა, გამეორება მინიშნების გარეშე და შეცდომის პოვნა, როცა შედეგი არ მუშაობს.",
     skills: ["თემის აზრი", "კოდის ხელით წერა", "შედეგის შემოწმება", "ადაპტაცია", "სუფთა კოდი"],
@@ -491,6 +512,10 @@ const lessonTexts = {
   },
   de: {
     reading: (name) => `${name} ist ein wichtiger Teil des Entwicklerwegs. Verstehe zuerst die Idee, wiederhole dann das Beispiel und erledige viele kleine Aufgaben. Überspringe Praxis nicht: professionelle Fähigkeit entsteht durch Wiederholung.`,
+    tools: () =>
+      "Nutze Visual Studio Code oder einen anderen einfachen Code-Editor. Prüfe das Ergebnis in Chrome oder Edge, öffne DevTools mit F12, halte CodeMaster 4 daneben offen und vergleiche die Struktur der Lektion: Grundlage, Beispiel, Aufgaben und Prüfung.",
+    buildTools: () =>
+      "Arbeite wie an einem echten Projekt: Öffne CodeMaster 4 als Vorlage und erstelle daneben deine eigenen Dateien index.html, styles.css, app.js und server.js. Schreibe in Visual Studio Code, teste im Browser, vergleiche deinen Bildschirm mit dieser App und wiederhole, bis die Logik passt.",
     practice: "Baue eine einfache Version, teste sie auf Desktop, Tablet und Smartphone und verbessere dann einen konkreten Teil.",
     quality: "Du kannst den Code erklären, ohne Hilfe wiederholen und einen Fehler finden, wenn das Ergebnis nicht funktioniert.",
     skills: ["Sinn des Themas", "Code per Hand", "Ergebnis prüfen", "Responsivität", "sauberer Code"],
@@ -568,6 +593,7 @@ function lessons() {
     title: seed[langIndex],
     reading: t.reading(seed[langIndex]),
     code: seed[6],
+    tools: state.track === "build" ? t.buildTools(seed[langIndex]) : t.tools(seed[langIndex]),
     skills: t.skills,
     practice: t.practice,
     quality: t.quality,
@@ -656,6 +682,7 @@ function renderModule() {
   $("moduleTitle").textContent = lesson.title;
   $("moduleReading").textContent = lesson.reading;
   $("moduleCode").textContent = lesson.code;
+  $("moduleTools").textContent = lesson.tools;
   $("moduleSkills").innerHTML = lesson.skills.map((skill) => `<li>${skill}</li>`).join("");
   $("modulePractice").textContent = lesson.practice;
   $("moduleQuality").textContent = lesson.quality;
