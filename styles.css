@@ -9,6 +9,12 @@
   --teal-dark: #12615b;
   --coral: #d95c4b;
   --yellow: #f0bd4f;
+  --button-primary-text: #ffffff;
+  --button-ghost-text: #12615b;
+  --button-ghost-bg: #e6f1ef;
+  --button-quiet-bg: #f1f5f4;
+  --button-icon-bg: rgba(255, 255, 255, 0.94);
+  --button-active-text: #ffffff;
   --shadow: 0 18px 50px rgba(23, 32, 38, 0.12);
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -26,6 +32,12 @@ body[data-theme="dark"] {
   --teal-dark: #239487;
   --coral: #ff806f;
   --yellow: #f5c85f;
+  --button-primary-text: #071315;
+  --button-ghost-text: #dbfffa;
+  --button-ghost-bg: #243d3f;
+  --button-quiet-bg: #223235;
+  --button-icon-bg: rgba(24, 35, 38, 0.94);
+  --button-active-text: #ffffff;
   --shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
 }
 
@@ -255,12 +267,12 @@ main {
   gap: 10px;
   padding: 12px;
   color: var(--ink);
-  background: #f1f5f4;
+  background: var(--button-quiet-bg);
   text-align: left;
 }
 
 .lesson-button[aria-current="true"] {
-  color: #fff;
+  color: var(--button-active-text);
   background: var(--teal-dark);
 }
 
@@ -376,7 +388,7 @@ main {
 
 .primary-button {
   padding: 0 16px;
-  color: #fff;
+  color: var(--button-primary-text);
   background: var(--teal);
 }
 
@@ -386,25 +398,19 @@ main {
 
 .ghost-button {
   padding: 0 16px;
-  color: var(--teal-dark);
-  background: #e6f1ef;
-}
-
-body[data-theme="dark"] .ghost-button {
-  color: #dbfffa;
-  background: #243d3f;
+  color: var(--button-ghost-text);
+  background: var(--button-ghost-bg);
 }
 
 .icon-button {
   width: 42px;
   padding: 0;
   color: var(--ink);
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--button-icon-bg);
   font-size: 1.35rem;
 }
 
 body[data-theme="dark"] .icon-button {
-  background: rgba(24, 35, 38, 0.92);
   border: 1px solid var(--line);
 }
 
@@ -503,6 +509,10 @@ body[data-theme="dark"] .icon-button {
   display: block;
 }
 
+.modal--nested {
+  z-index: 30;
+}
+
 .modal__backdrop {
   position: absolute;
   inset: 0;
@@ -522,6 +532,22 @@ body[data-theme="dark"] .icon-button {
   background: var(--panel);
   color: var(--ink);
   box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
+}
+
+.language-dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: min(430px, calc(100% - 36px));
+  max-height: calc(100vh - 36px);
+  overflow: auto;
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--ink);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.35);
+  transform: translate(-50%, -50%);
 }
 
 .settings-header {
@@ -565,11 +591,13 @@ body[data-theme="dark"] .icon-button {
 
 .language-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: 1fr;
   gap: 8px;
 }
 
+.select-button,
 .language-choice {
+  width: 100%;
   min-height: 46px;
   padding: 0 12px;
   border: 1px solid var(--line);
@@ -578,8 +606,16 @@ body[data-theme="dark"] .icon-button {
   text-align: left;
 }
 
+.select-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  background: var(--button-quiet-bg);
+}
+
 .language-choice[aria-pressed="true"] {
-  color: #fff;
+  color: var(--button-active-text);
   background: var(--teal-dark);
   border-color: var(--teal-dark);
 }
@@ -740,8 +776,12 @@ body[data-theme="dark"] .icon-button {
     padding: 16px;
   }
 
-  .settings-grid,
-  .language-grid {
+  .language-dialog {
+    width: calc(100% - 20px);
+    padding: 16px;
+  }
+
+  .settings-grid {
     grid-template-columns: 1fr;
   }
 }

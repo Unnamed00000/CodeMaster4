@@ -136,7 +136,10 @@
         <div class="settings-grid">
           <article class="settings-section">
             <h3 id="languageTitle"></h3>
-            <div class="language-grid" id="languageGrid"></div>
+            <button class="select-button" id="languageOpen" type="button">
+              <span id="languageButtonLabel"></span>
+              <span aria-hidden="true">›</span>
+            </button>
           </article>
 
           <article class="settings-section">
@@ -172,6 +175,20 @@
             <p id="aboutDeveloperText"></p>
           </article>
         </div>
+      </section>
+    </div>
+
+    <div class="modal modal--nested" id="languageModal" aria-hidden="true">
+      <div class="modal__backdrop" data-close-language></div>
+      <section class="language-dialog" role="dialog" aria-modal="true" aria-labelledby="languageDialogTitle">
+        <div class="settings-header">
+          <div>
+            <p class="eyebrow" id="languageDialogEyebrow"></p>
+            <h2 id="languageDialogTitle"></h2>
+          </div>
+          <button class="icon-button" id="languageClose" type="button" aria-label="Закрыть">×</button>
+        </div>
+        <div class="language-grid" id="languageGrid"></div>
       </section>
     </div>
 

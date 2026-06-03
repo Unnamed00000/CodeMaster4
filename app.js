@@ -40,6 +40,8 @@ const ui = {
     settingsEyebrow: "панель приложения",
     settingsTitle: "Настройки",
     languageTitle: "Язык приложения",
+    languageDialogEyebrow: "выбор языка",
+    languageDialogTitle: "Выбери язык",
     themeTitle: "Тема",
     themeSwitchLabel: "Тёмная тема",
     effectsTitle: "Звук и вибрация",
@@ -85,6 +87,8 @@ const ui = {
     settingsEyebrow: "app panel",
     settingsTitle: "Settings",
     languageTitle: "App language",
+    languageDialogEyebrow: "language selection",
+    languageDialogTitle: "Choose language",
     themeTitle: "Theme",
     themeSwitchLabel: "Dark theme",
     effectsTitle: "Sound and vibration",
@@ -130,6 +134,8 @@ const ui = {
     settingsEyebrow: "app-panel",
     settingsTitle: "Indstillinger",
     languageTitle: "App-sprog",
+    languageDialogEyebrow: "sprogvalg",
+    languageDialogTitle: "Vælg sprog",
     themeTitle: "Tema",
     themeSwitchLabel: "Mørkt tema",
     effectsTitle: "Lyd og vibration",
@@ -175,6 +181,8 @@ const ui = {
     settingsEyebrow: "აპის პანელი",
     settingsTitle: "პარამეტრები",
     languageTitle: "აპის ენა",
+    languageDialogEyebrow: "ენის არჩევა",
+    languageDialogTitle: "აირჩიე ენა",
     themeTitle: "თემა",
     themeSwitchLabel: "მუქი თემა",
     effectsTitle: "ხმა და ვიბრაცია",
@@ -220,6 +228,8 @@ const ui = {
     settingsEyebrow: "App-Panel",
     settingsTitle: "Einstellungen",
     languageTitle: "App-Sprache",
+    languageDialogEyebrow: "Sprachauswahl",
+    languageDialogTitle: "Sprache wählen",
     themeTitle: "Theme",
     themeSwitchLabel: "Dunkles Theme",
     effectsTitle: "Ton und Vibration",
@@ -491,6 +501,8 @@ function renderStaticText() {
 }
 
 function renderLanguages() {
+  const current = languages.find(([code]) => code === state.lang) || languages[0];
+  $("languageButtonLabel").textContent = current[1];
   $("languageGrid").innerHTML = languages
     .map(([code, label]) => `<button class="language-choice" data-lang="${code}" aria-pressed="${state.lang === code}">${label}</button>`)
     .join("");
@@ -579,6 +591,17 @@ function openSettings() {
 function closeSettings() {
   $("settingsModal").classList.remove("is-open");
   $("settingsModal").setAttribute("aria-hidden", "true");
+  closeLanguage();
+}
+
+function openLanguage() {
+  $("languageModal").classList.add("is-open");
+  $("languageModal").setAttribute("aria-hidden", "false");
+}
+
+function closeLanguage() {
+  $("languageModal").classList.remove("is-open");
+  $("languageModal").setAttribute("aria-hidden", "true");
 }
 
 document.addEventListener("click", (event) => {
@@ -594,15 +617,18 @@ document.addEventListener("click", (event) => {
   const langButton = event.target.closest("button[data-lang]");
   if (langButton) {
     state.lang = langButton.dataset.lang;
-    closeSettings();
+    closeLanguage();
     render();
   }
 
   if (event.target.matches("[data-close-settings]")) closeSettings();
+  if (event.target.matches("[data-close-language]")) closeLanguage();
 });
 
 $("settingsOpen").addEventListener("click", openSettings);
 $("settingsClose").addEventListener("click", closeSettings);
+$("languageOpen").addEventListener("click", openLanguage);
+$("languageClose").addEventListener("click", closeLanguage);
 
 $("toggleDone").addEventListener("click", () => {
   const id = lessons()[active].id;
