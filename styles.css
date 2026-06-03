@@ -458,6 +458,28 @@ body[data-theme="dark"] .icon-button {
   accent-color: var(--teal);
 }
 
+.install-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+}
+
+.install-actions button {
+  width: 100%;
+  min-height: 48px;
+  white-space: normal;
+}
+
+.install-note {
+  min-height: 72px;
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  white-space: pre-line;
+}
+
 .projects {
   margin-top: 32px;
 }
@@ -783,8 +805,13 @@ body[data-theme="dark"] .icon-button {
   }
 
   .task-toolbar,
-  .task-toolbar button {
+  .task-toolbar button,
+  .install-actions button {
     width: 100%;
+  }
+
+  .install-actions {
+    grid-template-columns: 1fr;
   }
 
   .settings-dialog {

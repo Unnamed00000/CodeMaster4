@@ -4,6 +4,12 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CodeMaster 4</title>
+    <meta name="theme-color" content="#12615b" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="CodeMaster 4" />
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32.png" />
+    <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -163,6 +169,17 @@
               <input id="vibrationToggle" type="checkbox" />
               <span class="switch"></span>
             </label>
+          </article>
+
+          <article class="settings-section settings-section--wide">
+            <h3 id="installTitle"></h3>
+            <div class="install-actions">
+              <button class="ghost-button" id="iphoneInstallButton" type="button"></button>
+              <button class="ghost-button" id="androidInstallButton" type="button"></button>
+              <button class="primary-button" id="shareAppButton" type="button"></button>
+              <button class="ghost-button" id="checkUpdateButton" type="button"></button>
+            </div>
+            <p class="install-note" id="installInfoText"></p>
           </article>
 
           <article class="settings-section settings-section--wide">

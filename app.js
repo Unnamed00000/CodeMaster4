@@ -47,6 +47,18 @@ const ui = {
     effectsTitle: "Звук и вибрация",
     soundSwitchLabel: "Звук кнопок",
     vibrationSwitchLabel: "Вибрация кнопок",
+    installTitle: "Установка и обновления",
+    iphoneInstallButton: "Инструкция для iPhone",
+    androidInstallButton: "Инструкция для Android",
+    shareAppButton: "Поделиться приложением",
+    checkUpdateButton: "Проверить обновление",
+    installInfoText: "Выбери действие: инструкция появится здесь.",
+    iphoneInstallText:
+      "iPhone: открой приложение в Safari, нажми кнопку Поделиться, выбери На экран Домой, затем нажми Добавить. Иконка CodeMaster 4 появится на рабочем столе.",
+    androidInstallText:
+      "Android/Samsung: открой приложение в Chrome или Samsung Internet, нажми меню, выбери Добавить на главный экран или Установить приложение. Иконка CodeMaster 4 появится на экране телефона.",
+    shareFallbackText: "Ссылка на приложение скопирована.",
+    updateCheckedText: "Проверка выполнена. Если GitHub открыт с последним коммитом, у тебя актуальная версия.",
     aboutProgramTitle: "О программе",
     aboutProgramText:
       "Имя приложения: CodeMaster 4\nОписание приложения: CodeMaster 4 учит создавать сайты и приложения, читать основу, писать код, повторять задания, проверять результат и расти до профессиональной разработки.",
@@ -94,6 +106,18 @@ const ui = {
     effectsTitle: "Sound and vibration",
     soundSwitchLabel: "Button sound",
     vibrationSwitchLabel: "Button vibration",
+    installTitle: "Install and updates",
+    iphoneInstallButton: "iPhone install guide",
+    androidInstallButton: "Android install guide",
+    shareAppButton: "Share app",
+    checkUpdateButton: "Check update",
+    installInfoText: "Choose an action: the instruction will appear here.",
+    iphoneInstallText:
+      "iPhone: open the app in Safari, tap Share, choose Add to Home Screen, then tap Add. The CodeMaster 4 icon will appear on the home screen.",
+    androidInstallText:
+      "Android/Samsung: open the app in Chrome or Samsung Internet, tap the menu, choose Add to Home screen or Install app. The CodeMaster 4 icon will appear on the phone screen.",
+    shareFallbackText: "App link copied.",
+    updateCheckedText: "Update check complete. If GitHub shows the latest commit, you have the current version.",
     aboutProgramTitle: "About the program",
     aboutProgramText:
       "Application name: CodeMaster 4\nApplication description: CodeMaster 4 teaches websites and applications: read the basics, write code, repeat tasks, check results and grow into professional development.",
@@ -141,6 +165,18 @@ const ui = {
     effectsTitle: "Lyd og vibration",
     soundSwitchLabel: "Knaplyd",
     vibrationSwitchLabel: "Knapvibration",
+    installTitle: "Installation og opdateringer",
+    iphoneInstallButton: "iPhone-vejledning",
+    androidInstallButton: "Android-vejledning",
+    shareAppButton: "Del app",
+    checkUpdateButton: "Tjek opdatering",
+    installInfoText: "Vælg en handling: vejledningen vises her.",
+    iphoneInstallText:
+      "iPhone: åbn appen i Safari, tryk Del, vælg Føj til hjemmeskærm, og tryk Tilføj. CodeMaster 4-ikonet vises på hjemmeskærmen.",
+    androidInstallText:
+      "Android/Samsung: åbn appen i Chrome eller Samsung Internet, tryk menuen, vælg Føj til startskærm eller Installer app. CodeMaster 4-ikonet vises på telefonen.",
+    shareFallbackText: "App-link kopieret.",
+    updateCheckedText: "Opdatering tjekket. Hvis GitHub viser seneste commit, har du den aktuelle version.",
     aboutProgramTitle: "Om programmet",
     aboutProgramText:
       "Appnavn: CodeMaster 4\nAppbeskrivelse: CodeMaster 4 lærer dig at bygge websites og apps: læse grundlag, skrive kode, gentage opgaver, kontrollere resultater og vokse mod professionel udvikling.",
@@ -188,6 +224,18 @@ const ui = {
     effectsTitle: "ხმა და ვიბრაცია",
     soundSwitchLabel: "ღილაკის ხმა",
     vibrationSwitchLabel: "ღილაკის ვიბრაცია",
+    installTitle: "დაყენება და განახლებები",
+    iphoneInstallButton: "iPhone ინსტრუქცია",
+    androidInstallButton: "Android ინსტრუქცია",
+    shareAppButton: "აპის გაზიარება",
+    checkUpdateButton: "განახლების შემოწმება",
+    installInfoText: "აირჩიე მოქმედება: ინსტრუქცია აქ გამოჩნდება.",
+    iphoneInstallText:
+      "iPhone: გახსენი აპი Safari-ში, დააჭირე Share, აირჩიე Add to Home Screen და შემდეგ Add. CodeMaster 4-ის ხატულა გამოჩნდება მთავარ ეკრანზე.",
+    androidInstallText:
+      "Android/Samsung: გახსენი აპი Chrome-ში ან Samsung Internet-ში, დააჭირე მენიუს, აირჩიე Add to Home screen ან Install app. CodeMaster 4-ის ხატულა გამოჩნდება ტელეფონზე.",
+    shareFallbackText: "აპის ბმული დაკოპირდა.",
+    updateCheckedText: "განახლება შემოწმდა. თუ GitHub აჩვენებს ბოლო commit-ს, გაქვს მიმდინარე ვერსია.",
     aboutProgramTitle: "პროგრამის შესახებ",
     aboutProgramText:
       "აპის სახელი: CodeMaster 4\nაპის აღწერა: CodeMaster 4 გასწავლის საიტებისა და აპების შექმნას: საფუძვლის წაკითხვას, კოდის წერას, დავალებების გამეორებას, შედეგის შემოწმებას და პროფესიულ განვითარებას.",
@@ -235,6 +283,18 @@ const ui = {
     effectsTitle: "Ton und Vibration",
     soundSwitchLabel: "Tastenton",
     vibrationSwitchLabel: "Tastenvibration",
+    installTitle: "Installation und Updates",
+    iphoneInstallButton: "iPhone-Anleitung",
+    androidInstallButton: "Android-Anleitung",
+    shareAppButton: "App teilen",
+    checkUpdateButton: "Update prüfen",
+    installInfoText: "Wähle eine Aktion: Die Anleitung erscheint hier.",
+    iphoneInstallText:
+      "iPhone: Öffne die App in Safari, tippe Teilen, wähle Zum Home-Bildschirm, dann Hinzufügen. Das CodeMaster 4-Symbol erscheint auf dem Home-Bildschirm.",
+    androidInstallText:
+      "Android/Samsung: Öffne die App in Chrome oder Samsung Internet, tippe das Menü, wähle Zum Startbildschirm hinzufügen oder App installieren. Das CodeMaster 4-Symbol erscheint auf dem Telefon.",
+    shareFallbackText: "App-Link kopiert.",
+    updateCheckedText: "Update-Prüfung abgeschlossen. Wenn GitHub den letzten Commit zeigt, hast du die aktuelle Version.",
     aboutProgramTitle: "Über das Programm",
     aboutProgramText:
       "App-Name: CodeMaster 4\nApp-Beschreibung: CodeMaster 4 lehrt Websites und Anwendungen: Grundlagen lesen, Code schreiben, Aufgaben wiederholen, Ergebnisse prüfen und professionell wachsen.",
@@ -667,6 +727,40 @@ $("soundToggle").addEventListener("change", (event) => {
 $("vibrationToggle").addEventListener("change", (event) => {
   state.vibration = event.target.checked;
   saveState();
+});
+
+$("iphoneInstallButton").addEventListener("click", () => {
+  $("installInfoText").textContent = text().iphoneInstallText;
+});
+
+$("androidInstallButton").addEventListener("click", () => {
+  $("installInfoText").textContent = text().androidInstallText;
+});
+
+$("shareAppButton").addEventListener("click", async () => {
+  const shareData = {
+    title: "CodeMaster 4",
+    text: text().heroTitle,
+    url: location.href,
+  };
+
+  if (navigator.share) {
+    try {
+      await navigator.share(shareData);
+    } catch {
+      $("installInfoText").textContent = text().installInfoText;
+    }
+    return;
+  }
+
+  if (navigator.clipboard) {
+    await navigator.clipboard.writeText(location.href);
+  }
+  $("installInfoText").textContent = text().shareFallbackText;
+});
+
+$("checkUpdateButton").addEventListener("click", () => {
+  $("installInfoText").textContent = `${text().updateCheckedText} ${new Date().toLocaleString()}`;
 });
 
 $("resetProgress").addEventListener("click", () => {
