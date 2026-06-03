@@ -103,17 +103,19 @@ button:active {
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: start;
   gap: 16px;
   padding: 22px clamp(18px, 5vw, 70px);
 }
 
 .topbar strong {
+  display: block;
   color: #fff;
-  max-width: min(760px, calc(100% - 120px));
-  font-size: clamp(3rem, 9vw, 7.2rem);
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  font-size: clamp(3rem, 8vw, 6.6rem);
   font-weight: 900;
   line-height: 0.9;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.34);
@@ -127,9 +129,14 @@ button:active {
   flex-wrap: wrap;
 }
 
+.topbar__actions {
+  justify-content: flex-end;
+  min-width: 94px;
+}
+
 .hero__content {
   width: min(760px, 100%);
-  padding: 120px clamp(18px, 5vw, 70px) 76px;
+  padding: clamp(210px, 24vw, 285px) clamp(18px, 5vw, 70px) clamp(42px, 8vh, 76px);
 }
 
 .eyebrow,
@@ -786,27 +793,38 @@ body[data-theme="dark"] .icon-button {
   }
 
   .topbar {
-    align-items: flex-start;
     padding: 16px;
+    grid-template-columns: 1fr;
+    gap: 12px;
   }
 
   .topbar__actions {
+    order: 1;
     justify-content: flex-end;
-    max-width: 108px;
+    width: 100%;
+    max-width: none;
   }
 
   .topbar strong {
-    max-width: calc(100% - 116px);
-    font-size: clamp(2.75rem, 17vw, 4.8rem);
+    order: 2;
+    max-width: 100%;
+    font-size: clamp(3rem, 16vw, 5.1rem);
   }
 
   .hero__content {
-    padding: 118px 16px 58px;
+    padding: clamp(245px, 46vw, 340px) 16px 48px;
   }
 
   h1 {
-    font-size: clamp(2.1rem, 12vw, 3.4rem);
+    max-width: 100%;
+    font-size: clamp(1.9rem, 10vw, 3.1rem);
     line-height: 1.04;
+  }
+
+  .hero__content p:last-child {
+    max-width: 100%;
+    font-size: clamp(0.98rem, 4.2vw, 1.08rem);
+    line-height: 1.55;
   }
 
   main {
