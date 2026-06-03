@@ -524,9 +524,9 @@ body[data-theme="dark"] .icon-button {
   top: 18px;
   right: 18px;
   width: min(720px, calc(100% - 36px));
-  max-height: calc(100vh - 36px);
+  max-height: calc(100vh - 64px);
   overflow: auto;
-  padding: 20px;
+  padding: 20px 20px 34px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: var(--panel);
@@ -566,6 +566,7 @@ body[data-theme="dark"] .icon-button {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 12px;
+  padding-bottom: 10px;
 }
 
 .settings-section {
@@ -577,6 +578,7 @@ body[data-theme="dark"] .icon-button {
 
 .settings-section--wide {
   grid-column: 1 / -1;
+  border-left: 4px solid var(--teal);
 }
 
 .settings-section h3 {
@@ -772,8 +774,8 @@ body[data-theme="dark"] .icon-button {
     top: 10px;
     right: 10px;
     width: calc(100% - 20px);
-    max-height: calc(100vh - 20px);
-    padding: 16px;
+    max-height: calc(100vh - 44px);
+    padding: 16px 16px 30px;
   }
 
   .language-dialog {
