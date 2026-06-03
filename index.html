@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Путь Разработчика</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <img class="hero__image" src="assets/coding-workspace.png" alt="" />
+      <nav class="topbar" aria-label="Навигация">
+        <strong id="brandName">Путь Разработчика</strong>
+        <div class="topbar__actions">
+          <button class="icon-button" id="settingsOpen" type="button" title="Настройки" aria-label="Настройки">⚙</button>
+          <button class="icon-button" id="resetProgress" type="button" title="Сбросить прогресс" aria-label="Сбросить прогресс">↺</button>
+        </div>
+      </nav>
+      <section class="hero__content">
+        <p class="eyebrow" id="heroEyebrow"></p>
+        <h1 id="heroTitle"></h1>
+        <p id="heroText"></p>
+      </section>
+    </header>
+
+    <main>
+      <section class="dashboard" aria-label="Прогресс">
+        <article class="metric">
+          <span id="completedCount">0</span>
+          <p id="lessonsMetric"></p>
+        </article>
+        <article class="metric">
+          <span id="taskCount">0</span>
+          <p id="tasksMetric"></p>
+        </article>
+        <article class="metric">
+          <span id="focusScore">0%</span>
+          <p id="progressMetric"></p>
+        </article>
+      </section>
+
+      <section class="intro-strip">
+        <article>
+          <h2 id="introOneTitle"></h2>
+          <p id="introOneText"></p>
+        </article>
+        <article>
+          <h2 id="introTwoTitle"></h2>
+          <p id="introTwoText"></p>
+        </article>
+        <article>
+          <h2 id="introThreeTitle"></h2>
+          <p id="introThreeText"></p>
+        </article>
+      </section>
+
+      <section class="workspace">
+        <aside class="panel lesson-panel" aria-label="Список уроков">
+          <div class="section-title">
+            <p id="planLabel"></p>
+            <h2 id="planTitle"></h2>
+          </div>
+          <div class="lesson-list" id="lessonList"></div>
+        </aside>
+
+        <section class="main-panel" aria-live="polite">
+          <div class="section-title">
+            <p id="moduleLabel"></p>
+            <h2 id="moduleTitle"></h2>
+          </div>
+
+          <div class="learning-layout">
+            <article class="reading-card">
+              <h3 id="readingTitle"></h3>
+              <p id="moduleReading"></p>
+            </article>
+            <article class="code-card">
+              <h3 id="codeTitle"></h3>
+              <pre><code id="moduleCode"></code></pre>
+            </article>
+          </div>
+
+          <div class="module-grid">
+            <article class="module-block">
+              <h3 id="understandTitle"></h3>
+              <ul id="moduleSkills"></ul>
+            </article>
+            <article class="module-block">
+              <h3 id="practiceTitle"></h3>
+              <p id="modulePractice"></p>
+            </article>
+            <article class="module-block">
+              <h3 id="qualityTitle"></h3>
+              <p id="moduleQuality"></p>
+            </article>
+          </div>
+
+          <section class="tasks-panel">
+            <div class="section-title">
+              <p id="tasksLabel"></p>
+              <h2 id="tasksTitle"></h2>
+            </div>
+            <div class="task-toolbar">
+              <button class="primary-button" id="toggleDone" type="button"></button>
+              <button class="ghost-button" id="clearLessonTasks" type="button"></button>
+            </div>
+            <div class="task-list" id="taskList"></div>
+          </section>
+        </section>
+      </section>
+
+      <section class="projects">
+        <div class="section-title">
+          <p id="projectsLabel"></p>
+          <h2 id="projectsTitle"></h2>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p id="footerText"></p>
+    </footer>
+
+    <div class="modal" id="settingsModal" aria-hidden="true">
+      <div class="modal__backdrop" data-close-settings></div>
+      <section class="settings-dialog" role="dialog" aria-modal="true" aria-labelledby="settingsTitle">
+        <div class="settings-header">
+          <div>
+            <p class="eyebrow" id="settingsEyebrow"></p>
+            <h2 id="settingsTitle"></h2>
+          </div>
+          <button class="icon-button" id="settingsClose" type="button" aria-label="Закрыть">×</button>
+        </div>
+
+        <div class="settings-grid">
+          <article class="settings-section">
+            <h3 id="languageTitle"></h3>
+            <div class="language-grid" id="languageGrid"></div>
+          </article>
+
+          <article class="settings-section">
+            <h3 id="themeTitle"></h3>
+            <label class="switch-row">
+              <span id="themeSwitchLabel"></span>
+              <input id="themeToggle" type="checkbox" />
+              <span class="switch"></span>
+            </label>
+          </article>
+
+          <article class="settings-section">
+            <h3 id="effectsTitle"></h3>
+            <label class="switch-row">
+              <span id="soundSwitchLabel"></span>
+              <input id="soundToggle" type="checkbox" />
+              <span class="switch"></span>
+            </label>
+            <label class="switch-row">
+              <span id="vibrationSwitchLabel"></span>
+              <input id="vibrationToggle" type="checkbox" />
+              <span class="switch"></span>
+            </label>
+          </article>
+
+          <article class="settings-section settings-section--wide">
+            <h3 id="aboutProgramTitle"></h3>
+            <p id="aboutProgramText"></p>
+          </article>
+
+          <article class="settings-section settings-section--wide">
+            <h3 id="aboutDeveloperTitle"></h3>
+            <p id="aboutDeveloperText"></p>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
