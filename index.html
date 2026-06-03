@@ -66,6 +66,7 @@
             <p id="planLabel"></p>
             <h2 id="planTitle"></h2>
           </div>
+          <div class="track-switch" id="trackSwitch"></div>
           <div class="lesson-list" id="lessonList"></div>
         </aside>
 
@@ -206,6 +207,24 @@
           <button class="icon-button" id="languageClose" type="button" aria-label="Закрыть">×</button>
         </div>
         <div class="language-grid" id="languageGrid"></div>
+      </section>
+    </div>
+
+    <div class="modal modal--nested" id="trackRecommendModal" aria-hidden="true">
+      <div class="modal__backdrop" data-close-track-recommend></div>
+      <section class="language-dialog" role="dialog" aria-modal="true" aria-labelledby="trackRecommendTitle">
+        <div class="settings-header">
+          <div>
+            <p class="eyebrow" id="trackRecommendEyebrow"></p>
+            <h2 id="trackRecommendTitle"></h2>
+          </div>
+          <button class="icon-button" id="trackRecommendClose" type="button" aria-label="Закрыть">×</button>
+        </div>
+        <p class="recommend-text" id="trackRecommendText"></p>
+        <div class="recommend-actions">
+          <button class="primary-button" id="trackReturnGeneral" type="button"></button>
+          <button class="ghost-button" id="trackContinueBuild" type="button"></button>
+        </div>
       </section>
     </div>
 

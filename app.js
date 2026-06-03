@@ -24,6 +24,14 @@ const ui = {
     introThreeText: "Профессионализм появляется через повторение: много маленьких задач, проверка и улучшение.",
     planLabel: "План",
     planTitle: "Большая программа",
+    trackGeneral: "Общий курс",
+    trackBuildApp: "Создать CodeMaster 4",
+    trackRecommendEyebrow: "рекомендация перед стартом",
+    trackRecommendTitle: "Сначала пройди полный курс",
+    trackRecommendText:
+      "Я настоятельно рекомендую сначала пройти общий программный путь: HTML, CSS, JavaScript, Java, адаптивность, данные, тестирование и Git. После этого путь «Создать CodeMaster 4» будет намного понятнее, и ты сможешь построить такое приложение с нуля до публикации.",
+    trackReturnGeneral: "Вернуться к общему курсу",
+    trackContinueBuild: "Всё равно начать сборку",
     readingTitle: "Прочитай основу",
     codeTitle: "Мини-пример",
     understandTitle: "Понять",
@@ -83,6 +91,14 @@ const ui = {
     introThreeText: "Professional skill grows through repetition: many small tasks, checking and improvement.",
     planLabel: "Plan",
     planTitle: "Full program",
+    trackGeneral: "General course",
+    trackBuildApp: "Build CodeMaster 4",
+    trackRecommendEyebrow: "recommended before starting",
+    trackRecommendTitle: "Finish the full course first",
+    trackRecommendText:
+      "I strongly recommend completing the general programming path first: HTML, CSS, JavaScript, Java, responsiveness, data, testing and Git. After that, the “Build CodeMaster 4” path will be much clearer, and you will be able to build this kind of app from zero to publication.",
+    trackReturnGeneral: "Return to general course",
+    trackContinueBuild: "Start building anyway",
     readingTitle: "Read the basics",
     codeTitle: "Mini example",
     understandTitle: "Understand",
@@ -142,6 +158,14 @@ const ui = {
     introThreeText: "Professionelle færdigheder vokser gennem gentagelse: mange små opgaver, kontrol og forbedring.",
     planLabel: "Plan",
     planTitle: "Stor program",
+    trackGeneral: "Generelt kursus",
+    trackBuildApp: "Byg CodeMaster 4",
+    trackRecommendEyebrow: "anbefaling før start",
+    trackRecommendTitle: "Gennemfør hele kurset først",
+    trackRecommendText:
+      "Jeg anbefaler kraftigt først at gennemføre den generelle programmeringsvej: HTML, CSS, JavaScript, Java, responsivitet, data, test og Git. Derefter bliver “Byg CodeMaster 4” meget tydeligere, og du kan bygge en sådan app fra nul til udgivelse.",
+    trackReturnGeneral: "Tilbage til generelt kursus",
+    trackContinueBuild: "Start alligevel",
     readingTitle: "Læs grundlaget",
     codeTitle: "Mini-eksempel",
     understandTitle: "Forstå",
@@ -201,6 +225,14 @@ const ui = {
     introThreeText: "პროფესიონალიზმი იზრდება გამეორებით: ბევრი პატარა დავალება, შემოწმება და გაუმჯობესება.",
     planLabel: "გეგმა",
     planTitle: "დიდი პროგრამა",
+    trackGeneral: "საერთო კურსი",
+    trackBuildApp: "CodeMaster 4-ის შექმნა",
+    trackRecommendEyebrow: "რეკომენდაცია დაწყებამდე",
+    trackRecommendTitle: "ჯერ გაიარე სრული კურსი",
+    trackRecommendText:
+      "მტკიცედ გირჩევ ჯერ გაიარო საერთო პროგრამირების გზა: HTML, CSS, JavaScript, Java, ადაპტაცია, მონაცემები, ტესტირება და Git. ამის შემდეგ “CodeMaster 4-ის შექმნა” ბევრად გასაგები იქნება და შეძლებ ასეთი აპის ნულიდან გამოქვეყნებამდე აწყობას.",
+    trackReturnGeneral: "საერთო კურსზე დაბრუნება",
+    trackContinueBuild: "მაინც დაწყება",
     readingTitle: "წაიკითხე საფუძველი",
     codeTitle: "მინი მაგალითი",
     understandTitle: "გაგება",
@@ -260,6 +292,14 @@ const ui = {
     introThreeText: "Professionalität wächst durch Wiederholung: viele kleine Aufgaben, Prüfen und Verbessern.",
     planLabel: "Plan",
     planTitle: "Großes Programm",
+    trackGeneral: "Allgemeiner Kurs",
+    trackBuildApp: "CodeMaster 4 bauen",
+    trackRecommendEyebrow: "Empfehlung vor dem Start",
+    trackRecommendTitle: "Schließe zuerst den vollen Kurs ab",
+    trackRecommendText:
+      "Ich empfehle dringend, zuerst den allgemeinen Programmierweg abzuschließen: HTML, CSS, JavaScript, Java, Responsivität, Daten, Tests und Git. Danach wird “CodeMaster 4 bauen” viel klarer, und du kannst so eine App von null bis zur Veröffentlichung erstellen.",
+    trackReturnGeneral: "Zurück zum allgemeinen Kurs",
+    trackContinueBuild: "Trotzdem starten",
     readingTitle: "Grundlage lesen",
     codeTitle: "Mini-Beispiel",
     understandTitle: "Verstehen",
@@ -317,6 +357,19 @@ const lessonSeeds = [
   ["testing-git", "Тестирование, Git и качество", "Testing, Git and quality", "Test, Git og kvalitet", "ტესტირება, Git და ხარისხი", "Tests, Git und Qualität", "git status\ngit add .\ngit commit -m \"Improve app\""],
   ["java-basics", "Java: от новичка к основам ООП", "Java: from beginner to OOP basics", "Java: fra begynder til OOP", "Java: დამწყებიდან OOP-მდე", "Java: vom Anfänger zu OOP", "public class App {\n  public static void main(String[] args) {\n    System.out.println(\"Hello Java\");\n  }\n}"],
   ["professional", "Профессиональная разработка", "Professional development", "Professionel udvikling", "პროფესიული დეველოპმენტი", "Professionelle Entwicklung", "plan -> build -> test -> refactor -> deploy"],
+];
+
+const buildAppSeeds = [
+  ["build-idea", "Идея и требования CodeMaster 4", "CodeMaster 4 idea and requirements", "CodeMaster 4 idé og krav", "CodeMaster 4 იდეა და მოთხოვნები", "CodeMaster 4 Idee und Anforderungen", "goal -> audience -> features -> first version"],
+  ["build-files", "Файлы проекта: HTML, CSS, JS", "Project files: HTML, CSS, JS", "Projektfiler: HTML, CSS, JS", "პროექტის ფაილები: HTML, CSS, JS", "Projektdateien: HTML, CSS, JS", "index.html\nstyles.css\napp.js\nserver.js"],
+  ["build-layout", "Главный экран и адаптивный layout", "Main screen and responsive layout", "Hovedskærm og responsivt layout", "მთავარი ეკრანი და ადაპტიური layout", "Startscreen und responsives Layout", ".workspace {\n  display: grid;\n  grid-template-columns: 360px 1fr;\n}"],
+  ["build-lessons", "Данные уроков и задания", "Lesson data and tasks", "Lektionsdata og opgaver", "გაკვეთილების მონაცემები და დავალებები", "Lektionsdaten und Aufgaben", "const lessons = [{ title, reading, code, tasks }];"],
+  ["build-language", "Переводы и выбор языка", "Translations and language picker", "Oversættelser og sprogvalg", "თარგმანები და ენის არჩევა", "Übersetzungen und Sprachauswahl", "state.lang = \"ru\";\nrender();"],
+  ["build-settings", "Настройки: тема, звук, вибрация", "Settings: theme, sound, vibration", "Indstillinger: tema, lyd, vibration", "პარამეტრები: თემა, ხმა, ვიბრაცია", "Einstellungen: Theme, Ton, Vibration", "document.body.dataset.theme = state.theme;"],
+  ["build-progress", "Прогресс, localStorage и чекбоксы", "Progress, localStorage and checkboxes", "Fremskridt, localStorage og checkbokse", "პროგრესი, localStorage და checkbox-ები", "Fortschritt, localStorage und Checkboxen", "localStorage.setItem(\"state\", JSON.stringify(state));"],
+  ["build-pwa", "Иконка, manifest и установка", "Icon, manifest and installation", "Ikon, manifest og installation", "ხატულა, manifest და დაყენება", "Icon, Manifest und Installation", "<link rel=\"manifest\" href=\"site.webmanifest\">"],
+  ["build-actions", "Поделиться и проверить обновление", "Share and check update", "Del og tjek opdatering", "გაზიარება და განახლების შემოწმება", "Teilen und Update prüfen", "navigator.share({ title, text, url });"],
+  ["build-publish", "Публикация в GitHub", "Publish to GitHub", "Udgiv til GitHub", "GitHub-ზე გამოქვეყნება", "Auf GitHub veröffentlichen", "git add .\ngit commit -m \"Release CodeMaster 4\"\ngit push"],
 ];
 
 const lessonTexts = {
@@ -488,6 +541,7 @@ function loadState() {
     theme: "light",
     sound: false,
     vibration: false,
+    track: "general",
     active: 0,
   };
   try {
@@ -508,7 +562,8 @@ function text() {
 function lessons() {
   const t = lessonTexts[state.lang] || lessonTexts.ru;
   const langIndex = { ru: 1, en: 2, da: 3, ka: 4, de: 5 }[state.lang] || 1;
-  return lessonSeeds.map((seed) => ({
+  const seeds = state.track === "build" ? buildAppSeeds : lessonSeeds;
+  return seeds.map((seed) => ({
     id: seed[0],
     title: seed[langIndex],
     reading: t.reading(seed[langIndex]),
@@ -518,6 +573,10 @@ function lessons() {
     quality: t.quality,
     tasks: t.tasks.map((task, index) => `${t.taskPrefix} ${index + 1}: ${task}.`),
   }));
+}
+
+function generalCourseComplete() {
+  return lessonSeeds.every((seed) => state.done.includes(seed[0]));
 }
 
 function checkedTaskIds() {
@@ -570,6 +629,12 @@ function renderLanguages() {
 
 function renderLessons() {
   const items = lessons();
+  const t = text();
+  $("planTitle").textContent = state.track === "build" ? t.trackBuildApp : t.planTitle;
+  $("trackSwitch").innerHTML = `
+    <button class="track-button" type="button" data-track="general" aria-pressed="${state.track === "general"}">${t.trackGeneral}</button>
+    <button class="track-button" type="button" data-track="build" aria-pressed="${state.track === "build"}">${t.trackBuildApp}</button>
+  `;
   $("lessonList").innerHTML = items
     .map((lesson, index) => {
       const done = state.done.includes(lesson.id);
@@ -610,10 +675,14 @@ function renderModule() {
 function renderStats() {
   const allLessons = lessons();
   const totalTasks = allLessons.length * lessonTexts[state.lang].tasks.length;
-  const doneTasks = checkedTaskIds().length;
-  $("completedCount").textContent = state.done.length;
+  const currentIds = new Set(allLessons.map((lesson) => lesson.id));
+  const doneTasks = Object.entries(state.tasks)
+    .filter(([lessonId]) => currentIds.has(lessonId))
+    .flatMap(([, tasks]) => tasks).length;
+  const doneLessons = allLessons.filter((lesson) => state.done.includes(lesson.id)).length;
+  $("completedCount").textContent = doneLessons;
   $("taskCount").textContent = doneTasks;
-  $("focusScore").textContent = `${Math.round(((state.done.length + doneTasks / lessonTexts[state.lang].tasks.length) / allLessons.length) * 100)}%`;
+  $("focusScore").textContent = `${Math.round(((doneLessons + doneTasks / lessonTexts[state.lang].tasks.length) / allLessons.length) * 100)}%`;
   $("tasksMetric").title = `${doneTasks}/${totalTasks}`;
 }
 
@@ -664,6 +733,22 @@ function closeLanguage() {
   $("languageModal").setAttribute("aria-hidden", "true");
 }
 
+function openTrackRecommendation() {
+  $("trackRecommendModal").classList.add("is-open");
+  $("trackRecommendModal").setAttribute("aria-hidden", "false");
+}
+
+function closeTrackRecommendation() {
+  $("trackRecommendModal").classList.remove("is-open");
+  $("trackRecommendModal").setAttribute("aria-hidden", "true");
+}
+
+function switchTrack(track) {
+  state.track = track;
+  active = 0;
+  render();
+}
+
 document.addEventListener("click", (event) => {
   const button = event.target.closest("button");
   if (button) feedback();
@@ -672,6 +757,16 @@ document.addEventListener("click", (event) => {
   if (lessonButton) {
     active = Number(lessonButton.dataset.index);
     render();
+  }
+
+  const trackButton = event.target.closest("button[data-track]");
+  if (trackButton) {
+    const nextTrack = trackButton.dataset.track;
+    if (nextTrack === "build" && state.track !== "build" && !generalCourseComplete()) {
+      openTrackRecommendation();
+    } else {
+      switchTrack(nextTrack);
+    }
   }
 
   const langButton = event.target.closest("button[data-lang]");
@@ -683,12 +778,22 @@ document.addEventListener("click", (event) => {
 
   if (event.target.matches("[data-close-settings]")) closeSettings();
   if (event.target.matches("[data-close-language]")) closeLanguage();
+  if (event.target.matches("[data-close-track-recommend]")) closeTrackRecommendation();
 });
 
 $("settingsOpen").addEventListener("click", openSettings);
 $("settingsClose").addEventListener("click", closeSettings);
 $("languageOpen").addEventListener("click", openLanguage);
 $("languageClose").addEventListener("click", closeLanguage);
+$("trackRecommendClose").addEventListener("click", closeTrackRecommendation);
+$("trackReturnGeneral").addEventListener("click", () => {
+  closeTrackRecommendation();
+  switchTrack("general");
+});
+$("trackContinueBuild").addEventListener("click", () => {
+  closeTrackRecommendation();
+  switchTrack("build");
+});
 
 $("toggleDone").addEventListener("click", () => {
   const id = lessons()[active].id;
@@ -766,6 +871,7 @@ $("checkUpdateButton").addEventListener("click", () => {
 $("resetProgress").addEventListener("click", () => {
   state.done = [];
   state.tasks = {};
+  state.track = "general";
   active = 0;
   render();
 });
