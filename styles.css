@@ -508,7 +508,7 @@ body[data-theme="dark"] .icon-button {
 }
 
 .install-note {
-  min-height: 72px;
+  min-height: 110px;
   margin-top: 14px;
   padding: 12px;
   border: 1px solid var(--line);

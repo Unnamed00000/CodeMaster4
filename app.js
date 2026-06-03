@@ -6,6 +6,8 @@ const languages = [
   ["de", "Deutsch"],
 ];
 
+const APP_VERSION = "2.1";
+
 const ui = {
   ru: {
     brand: "CodeMaster 4",
@@ -61,19 +63,22 @@ const ui = {
     androidInstallButton: "Инструкция для Android",
     shareAppButton: "Поделиться приложением",
     checkUpdateButton: "Проверить обновление",
+    forceUpdateButton: "Форс обновление",
     installInfoText: "Выбери действие: инструкция появится здесь.",
     iphoneInstallText:
       "iPhone: открой приложение в Safari, нажми кнопку Поделиться, выбери На экран Домой, затем нажми Добавить. Иконка CodeMaster 4 появится на рабочем столе.",
     androidInstallText:
       "Android/Samsung: открой приложение в Chrome или Samsung Internet, нажми меню, выбери Добавить на главный экран или Установить приложение. Иконка CodeMaster 4 появится на экране телефона.",
     shareFallbackText: "Ссылка на приложение скопирована.",
-    updateCheckedText: "Проверка выполнена. Если GitHub открыт с последним коммитом, у тебя актуальная версия.",
+    forceUpdateText: "Форс обновление запущено. Приложение сейчас перезагрузится и запросит свежую версию файлов.",
+    updateCheckedText:
+      "CodeMaster 4 v2.1\n1. Добавлена учебная линия создания CodeMaster 4 с нуля.\n2. Добавлены рекомендации инструментов в каждом уроке.\n3. Добавлены иконки приложения для iPhone и Android.\n4. Добавлены инструкции установки, поделиться и проверка обновлений.\n5. Улучшена адаптация заголовка и текста под телефон, планшет и компьютер.\n6. Добавлена кнопка форс обновления.",
     aboutProgramTitle: "О программе",
     aboutProgramText:
       "Имя приложения: CodeMaster 4\nОписание приложения: CodeMaster 4 учит создавать сайты и приложения, читать основу, писать код, повторять задания, проверять результат и расти до профессиональной разработки.",
     aboutDeveloperTitle: "О разработчике",
-    aboutDeveloperText: "Разработчик\nИмя разработчика: Адам Маргоев, 2026\nВерсия приложения: 2.0",
-    footerText: "Разработчик\nИмя разработчика: Адам Маргоев, 2026\nВерсия приложения: 2.0",
+    aboutDeveloperText: "Разработчик\nИмя разработчика: Адам Маргоев, 2026\nВерсия приложения: 2.1",
+    footerText: "Разработчик\nИмя разработчика: Адам Маргоев, 2026\nВерсия приложения: 2.1",
   },
   en: {
     brand: "CodeMaster 4",
@@ -129,19 +134,22 @@ const ui = {
     androidInstallButton: "Android install guide",
     shareAppButton: "Share app",
     checkUpdateButton: "Check update",
+    forceUpdateButton: "Force update",
     installInfoText: "Choose an action: the instruction will appear here.",
     iphoneInstallText:
       "iPhone: open the app in Safari, tap Share, choose Add to Home Screen, then tap Add. The CodeMaster 4 icon will appear on the home screen.",
     androidInstallText:
       "Android/Samsung: open the app in Chrome or Samsung Internet, tap the menu, choose Add to Home screen or Install app. The CodeMaster 4 icon will appear on the phone screen.",
     shareFallbackText: "App link copied.",
-    updateCheckedText: "Update check complete. If GitHub shows the latest commit, you have the current version.",
+    forceUpdateText: "Force update started. The app will reload and request fresh files.",
+    updateCheckedText:
+      "CodeMaster 4 v2.1\n1. Added the path for building CodeMaster 4 from zero.\n2. Added tool recommendations in every lesson.\n3. Added iPhone and Android app icons.\n4. Added install guides, share and update check actions.\n5. Improved responsive title and text for phone, tablet and desktop.\n6. Added the force update button.",
     aboutProgramTitle: "About the program",
     aboutProgramText:
       "Application name: CodeMaster 4\nApplication description: CodeMaster 4 teaches websites and applications: read the basics, write code, repeat tasks, check results and grow into professional development.",
     aboutDeveloperTitle: "About the developer",
-    aboutDeveloperText: "Developer\nDeveloper name: Adam Margoev, 2026\nApplication version: 2.0",
-    footerText: "Developer\nDeveloper name: Adam Margoev, 2026\nApplication version: 2.0",
+    aboutDeveloperText: "Developer\nDeveloper name: Adam Margoev, 2026\nApplication version: 2.1",
+    footerText: "Developer\nDeveloper name: Adam Margoev, 2026\nApplication version: 2.1",
   },
   da: {
     brand: "CodeMaster 4",
@@ -197,19 +205,22 @@ const ui = {
     androidInstallButton: "Android-vejledning",
     shareAppButton: "Del app",
     checkUpdateButton: "Tjek opdatering",
+    forceUpdateButton: "Force-opdater",
     installInfoText: "Vælg en handling: vejledningen vises her.",
     iphoneInstallText:
       "iPhone: åbn appen i Safari, tryk Del, vælg Føj til hjemmeskærm, og tryk Tilføj. CodeMaster 4-ikonet vises på hjemmeskærmen.",
     androidInstallText:
       "Android/Samsung: åbn appen i Chrome eller Samsung Internet, tryk menuen, vælg Føj til startskærm eller Installer app. CodeMaster 4-ikonet vises på telefonen.",
     shareFallbackText: "App-link kopieret.",
-    updateCheckedText: "Opdatering tjekket. Hvis GitHub viser seneste commit, har du den aktuelle version.",
+    forceUpdateText: "Force-opdatering startet. Appen genindlæses og henter friske filer.",
+    updateCheckedText:
+      "CodeMaster 4 v2.1\n1. Tilføjet læringsvej til at bygge CodeMaster 4 fra nul.\n2. Tilføjet værktøjsanbefalinger i hver lektion.\n3. Tilføjet appikoner til iPhone og Android.\n4. Tilføjet installationsvejledning, deling og opdateringstjek.\n5. Forbedret responsiv titel og tekst til telefon, tablet og computer.\n6. Tilføjet force-opdateringsknap.",
     aboutProgramTitle: "Om programmet",
     aboutProgramText:
       "Appnavn: CodeMaster 4\nAppbeskrivelse: CodeMaster 4 lærer dig at bygge websites og apps: læse grundlag, skrive kode, gentage opgaver, kontrollere resultater og vokse mod professionel udvikling.",
     aboutDeveloperTitle: "Om udvikleren",
-    aboutDeveloperText: "Udvikler\nUdviklernavn: Adam Margoev, 2026\nAppversion: 2.0",
-    footerText: "Udvikler\nUdviklernavn: Adam Margoev, 2026\nAppversion: 2.0",
+    aboutDeveloperText: "Udvikler\nUdviklernavn: Adam Margoev, 2026\nAppversion: 2.1",
+    footerText: "Udvikler\nUdviklernavn: Adam Margoev, 2026\nAppversion: 2.1",
   },
   ka: {
     brand: "CodeMaster 4",
@@ -265,19 +276,22 @@ const ui = {
     androidInstallButton: "Android ინსტრუქცია",
     shareAppButton: "აპის გაზიარება",
     checkUpdateButton: "განახლების შემოწმება",
+    forceUpdateButton: "ძალის განახლება",
     installInfoText: "აირჩიე მოქმედება: ინსტრუქცია აქ გამოჩნდება.",
     iphoneInstallText:
       "iPhone: გახსენი აპი Safari-ში, დააჭირე Share, აირჩიე Add to Home Screen და შემდეგ Add. CodeMaster 4-ის ხატულა გამოჩნდება მთავარ ეკრანზე.",
     androidInstallText:
       "Android/Samsung: გახსენი აპი Chrome-ში ან Samsung Internet-ში, დააჭირე მენიუს, აირჩიე Add to Home screen ან Install app. CodeMaster 4-ის ხატულა გამოჩნდება ტელეფონზე.",
     shareFallbackText: "აპის ბმული დაკოპირდა.",
-    updateCheckedText: "განახლება შემოწმდა. თუ GitHub აჩვენებს ბოლო commit-ს, გაქვს მიმდინარე ვერსია.",
+    forceUpdateText: "ძალის განახლება დაიწყო. აპი გადაიტვირთება და ახალ ფაილებს მოითხოვს.",
+    updateCheckedText:
+      "CodeMaster 4 v2.1\n1. დაემატა CodeMaster 4-ის ნულიდან შექმნის სასწავლო გზა.\n2. დაემატა ხელსაწყოების რეკომენდაციები ყველა გაკვეთილში.\n3. დაემატა iPhone და Android აპის ხატულები.\n4. დაემატა დაყენების ინსტრუქციები, გაზიარება და განახლების შემოწმება.\n5. გაუმჯობესდა სათაურისა და ტექსტის ადაპტაცია ტელეფონზე, პლანშეტზე და კომპიუტერზე.\n6. დაემატა ძალის განახლების ღილაკი.",
     aboutProgramTitle: "პროგრამის შესახებ",
     aboutProgramText:
       "აპის სახელი: CodeMaster 4\nაპის აღწერა: CodeMaster 4 გასწავლის საიტებისა და აპების შექმნას: საფუძვლის წაკითხვას, კოდის წერას, დავალებების გამეორებას, შედეგის შემოწმებას და პროფესიულ განვითარებას.",
     aboutDeveloperTitle: "დეველოპერის შესახებ",
-    aboutDeveloperText: "დეველოპერი\nდეველოპერის სახელი: ადამ მარგოევი, 2026\nაპის ვერსია: 2.0",
-    footerText: "დეველოპერი\nდეველოპერის სახელი: ადამ მარგოევი, 2026\nაპის ვერსია: 2.0",
+    aboutDeveloperText: "დეველოპერი\nდეველოპერის სახელი: ადამ მარგოევი, 2026\nაპის ვერსია: 2.1",
+    footerText: "დეველოპერი\nდეველოპერის სახელი: ადამ მარგოევი, 2026\nაპის ვერსია: 2.1",
   },
   de: {
     brand: "CodeMaster 4",
@@ -333,19 +347,22 @@ const ui = {
     androidInstallButton: "Android-Anleitung",
     shareAppButton: "App teilen",
     checkUpdateButton: "Update prüfen",
+    forceUpdateButton: "Force-Update",
     installInfoText: "Wähle eine Aktion: Die Anleitung erscheint hier.",
     iphoneInstallText:
       "iPhone: Öffne die App in Safari, tippe Teilen, wähle Zum Home-Bildschirm, dann Hinzufügen. Das CodeMaster 4-Symbol erscheint auf dem Home-Bildschirm.",
     androidInstallText:
       "Android/Samsung: Öffne die App in Chrome oder Samsung Internet, tippe das Menü, wähle Zum Startbildschirm hinzufügen oder App installieren. Das CodeMaster 4-Symbol erscheint auf dem Telefon.",
     shareFallbackText: "App-Link kopiert.",
-    updateCheckedText: "Update-Prüfung abgeschlossen. Wenn GitHub den letzten Commit zeigt, hast du die aktuelle Version.",
+    forceUpdateText: "Force-Update gestartet. Die App lädt neu und fordert frische Dateien an.",
+    updateCheckedText:
+      "CodeMaster 4 v2.1\n1. Lernpfad zum Erstellen von CodeMaster 4 von null hinzugefügt.\n2. Werkzeugempfehlungen in jeder Lektion hinzugefügt.\n3. App-Icons für iPhone und Android hinzugefügt.\n4. Installationsanleitungen, Teilen und Update-Prüfung hinzugefügt.\n5. Responsiver Titel und Text für Smartphone, Tablet und Desktop verbessert.\n6. Force-Update-Schaltfläche hinzugefügt.",
     aboutProgramTitle: "Über das Programm",
     aboutProgramText:
       "App-Name: CodeMaster 4\nApp-Beschreibung: CodeMaster 4 lehrt Websites und Anwendungen: Grundlagen lesen, Code schreiben, Aufgaben wiederholen, Ergebnisse prüfen und professionell wachsen.",
     aboutDeveloperTitle: "Über den Entwickler",
-    aboutDeveloperText: "Entwickler\nEntwicklername: Adam Margoev, 2026\nApp-Version: 2.0",
-    footerText: "Entwickler\nEntwicklername: Adam Margoev, 2026\nApp-Version: 2.0",
+    aboutDeveloperText: "Entwickler\nEntwicklername: Adam Margoev, 2026\nApp-Version: 2.1",
+    footerText: "Entwickler\nEntwicklername: Adam Margoev, 2026\nApp-Version: 2.1",
   },
 };
 
@@ -892,7 +909,20 @@ $("shareAppButton").addEventListener("click", async () => {
 });
 
 $("checkUpdateButton").addEventListener("click", () => {
-  $("installInfoText").textContent = `${text().updateCheckedText} ${new Date().toLocaleString()}`;
+  $("installInfoText").textContent = `${text().updateCheckedText}\n\n${new Date().toLocaleString()}`;
+});
+
+$("forceUpdateButton").addEventListener("click", async () => {
+  $("installInfoText").textContent = text().forceUpdateText;
+  if ("caches" in window) {
+    const keys = await caches.keys();
+    await Promise.all(keys.map((key) => caches.delete(key)));
+  }
+  setTimeout(() => {
+    const url = new URL(location.href);
+    url.searchParams.set("forceUpdate", Date.now().toString());
+    location.replace(url.toString());
+  }, 900);
 });
 
 $("resetProgress").addEventListener("click", () => {
