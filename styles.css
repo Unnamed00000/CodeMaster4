@@ -105,8 +105,8 @@ button:active {
   right: 0;
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  align-items: start;
-  gap: 16px;
+  align-items: center;
+  gap: 14px;
   padding: 22px clamp(18px, 5vw, 70px);
 }
 
@@ -117,7 +117,7 @@ button:active {
   overflow: hidden;
   text-overflow: clip;
   white-space: nowrap;
-  font-size: clamp(2.15rem, 6.2vw, 4.8rem);
+  font-size: clamp(1.9rem, 5.1vw, 4.1rem);
   font-weight: 900;
   line-height: 1;
   text-shadow: 0 2px 18px rgba(0, 0, 0, 0.34);
@@ -128,11 +128,12 @@ button:active {
   display: flex;
   gap: 10px;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .topbar__actions {
   justify-content: flex-end;
+  width: 94px;
   min-width: 94px;
 }
 
@@ -802,7 +803,7 @@ body[data-theme="dark"] .icon-button {
   .topbar {
     padding: 16px;
     grid-template-columns: minmax(0, 1fr) auto;
-    gap: 10px;
+    gap: 8px;
   }
 
   .topbar__actions {
@@ -813,7 +814,7 @@ body[data-theme="dark"] .icon-button {
 
   .topbar strong {
     max-width: 100%;
-    font-size: clamp(1.55rem, 6.2vw, 2.35rem);
+    font-size: clamp(1.25rem, 5.4vw, 1.85rem);
   }
 
   .hero__content {
